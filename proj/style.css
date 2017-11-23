@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 600px;
+  border: 1px solid red;
+  margin: 0px auto;
+}
+
+.gauche {
+  width: 19%;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.droit {
+  width: 80%;
+  height: 50px;
+  border: 1px solid green;
+}
