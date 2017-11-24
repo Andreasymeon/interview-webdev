@@ -1,38 +1,99 @@
 body {
   margin: 0px;
   padding: 0px;
+  height: 600px;
+  background-color: #0E0B16;
 }
 
 /*title*/
 header {
   text-align: center;
-  height: 800px;
-    border: 1px solid black;
 }
+
+/*.circle {
+  display: inline-block;
+  background: #E7DFDD;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #E0DBD7, #E5DEDE)
+}*/
 
 /*nav barre*/
-ul {
-  display: flex;
-  height: 800px;
-  justify-content: center;
-  flex-direction: column;
-  list-style-type: none;
-  align-items: center;
-  align-content: center;
-    border: 1px solid blue;
+#menutoggle {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 1; /*place the menu in front*/
+  -webkit-user-select: none: /*text cant be selectable by user*/
+  user-select: none;
 }
 
-ul>li {
-  width: 100%;
-  flex-basis: auto;
-  align-self: auto;
-  margin: auto;
-  padding: 20px;
-  font-size: 16px;
-    border: 1px solid yellow;
+/*menu burger*/
+#menutoggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #E7DFDD;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 2px; /*allows to change the position of transformed elements*/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
+
+#menutoggle span:first-child {
+  transform-origin: 0% 0%
+}
+
+#menutoggle span:nth-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/*transform slice of burger into a cross when ticked*/
+#menutoggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #E7DFDD;
+}
+
+/*makes the bottom line go up 45degrees*/
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*hide the middle slice*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0px 0px -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #E7DFDD;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased
+}
+
 a:link {
   text-decoration: none;
+  color: #E7DFDD;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0E0B16;
 }
 
 /*main content*/
