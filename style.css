@@ -1,49 +1,18 @@
+/*if height is less than 450px change style of the menu*/
+@media screen and (max-height:450px) {
+  .menu {padding-top: 15px;}
+  .menu a {font-size: 18px;}
+}
+
 body {
   margin: 15px;
-  padding: 15px;
+  padding: 10px 15px 10px 15px;
   height: 735px;
   background-color: #0E0B16;
   border: 3px solid #E7DFDD;
 }
 
-main {
-  transition: margin-left .3s;
-  padding: 20px;
-  font-family: 'Quicksand', sans-serif;
-  color:  #E7DFDD;
-}
-
-/*title*/
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 1px solid white;
-}
-
-h1 {
-  font-family: Quicksand, sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: normal;
-  line-height: 60px;
-  text-transform: uppercase;
-  color: #E7DFDD;
-}
-
-p {
-  font-family: Oxygen, sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 24px;
-  text-transform: none;
-  color: #E7DFDD;
-}
-
+/*sidenav animation*/
 /*side menu*/
 .menu {
   height: 100%;
@@ -60,6 +29,7 @@ p {
 
 /* links in menu*/
 .menu a {
+  font-family: 'Quicksand', sans-serif;
   padding: 40px 8px 8px 40px;
   text-decoration: none;
   font-size: 20px;
@@ -91,20 +61,66 @@ p {
   margin-left: 50px;
 }
 
-/*burgermenu*/
-.burgermenu {
+#main {
   display: flex;
-  align-items: flex-start;
-  margin: 0;
-  padding: 0;
-  width: 35px;
-border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  transition: margin-left .3s;
+  padding: 20px;
+  height: 700px;
+  font-family: 'Quicksand', sans-serif;
+  color:  #E7DFDD;
 }
 
-/*if height is less than 450px change style of the menu*/
-@media screen and (max-height:450px) {
-  .menu {padding-top: 15px;}
-  .menu a {font-size: 18px;}
+/*burgermenu*/
+span {
+  align-content: start;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  color:  #E7DFDD;
+}
+
+h1 {
+  align-self: center;
+  font-family: Quicksand, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #E7DFDD;
+}
+
+p {
+  text-align: center;
+  align-self: center;
+  font-family: Oxygen, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-transform: none;
+  color: #E7DFDD;
+}
+
+/*animation typeWriter*/
+.typeWriter p {
+  overflow: hidden; /*div hidden until beggining of animation*/
+  white-space: nowrap;/*keep sentence on single line until <br>*/
+  margin: 0 auto; /*scrolling effect*/
+  letter-spacing: 6px;
+  animation: typing 1s steps(30, end),
+              blink-caret .5s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
 }
 
 /*main content*/
