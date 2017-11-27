@@ -5,34 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>Interview-webdev</title>
+  <title>Andrea Symeon</title>
+  <script src="sidenav.js" charset="utf-8"></script>
+  <!--<script src="typing.js" charset="utf-8"></script>
+  <script src="burger.js" charset="utf-8"></script>-->
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Quicksand" rel="stylesheet">
 </head>
-<body>
-  <main>
-    <!--titre de ma page-->
-    <header>
-      <figure class="circle"></figure>
-    </header>
-    <!--barre de navigation-->
-    <nav>
-      <div id="menutoggle">
-        <ul class="menu">
-          <input type="checkbox" />
-          <!--3 lines for menu burger-->
-          <span></span>
-          <span></span>
-          <span></span>
 
-          <li><a href="homepage.html">Home Page</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="making-of.html">Making Of</a></li>
-          <li><a href="entreprise.html">Entreprise</a></li>
-          <li><a href="interview.html">Interview</a></li>
-          <li><a href="conclusion.html">Conclusion</a></li>
-        </ul>
+<body>
+  <div class="main">
+      <header>
+        <!--<div class="typing()">-->
+          <h1>Andrea Symeon</h1>
+          <p>Junior Web Developer</p>
+
+      </header>
+<!--barre de navigation, sidenav overlay-->
+      <div id="sidenav" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="homepage.html">Home Page</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="making-of.html">Making Of</a>
+        <a href="interview.html">Interview</a>
+        <a href="conclusion.html">Conclusion</a>
       </div>
-    </nav>
-    <!--footer mentions légales, copyright, contact-->
-  </main>
+<!--burger menu-->
+      <div class="burgermenu" onclick="openNav()">
+        <img src="photo/burger.png" alt="Menu" height="35px" width="35px">
+      </div>
+
+<!--footer mentions légales, copyright, contact-->
+</div>
+
 </body>
 </html>
