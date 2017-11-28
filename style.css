@@ -4,16 +4,32 @@
   .menu a {font-size: 18px;}
 }
 
+body.homepage {
+  margin: 15px;
+  padding: 10px 15px 10px 15px;
+  height: 730px;
+  background-color: #0E0B16;
+  border: 3px solid #F9F7F4;
+}
+
 body {
   margin: 15px;
   padding: 10px 15px 10px 15px;
-  height: 735px;
-  background-color: #0E0B16;
-  border: 3px solid #E7DFDD;
+  height: 730px;
+  background-color: #F9F7F4;
+  border: 3px solid #0E0B16;
 }
 
 /*sidenav animation*/
 /*side menu*/
+body.homepage {
+  margin: 15px;
+  padding: 10px 15px 10px 15px;
+  height: 730px;
+  background-color: #0E0B16;
+  border: 3px solid #F9F7F4;
+}
+
 .menu {
   height: 100%;
   width: 0;
@@ -21,7 +37,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #E7DFDD;
+  background-color: #F9F7F4;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -69,19 +85,30 @@ body {
   padding: 20px;
   height: 700px;
   font-family: 'Quicksand', sans-serif;
-  color:  #E7DFDD;
+  color:  #F9F7F4;
 }
 
-/*burgermenu*/
+/*burgermenu homepage*/
+span.homepage {
+  align-content: start;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  color:  #F9F7F4;
+}
+
+/*burgermenu other pages*/
 span {
   align-content: start;
   margin: 0;
   padding: 0;
   font-size: 25px;
   font-family: 'Quicksand', sans-serif;
-  color:  #E7DFDD;
+  color: #0E0B16;
 }
 
+/*header name*/
 #name {
   align-self: center;
   font-family: Quicksand, sans-serif;
@@ -91,9 +118,10 @@ span {
   letter-spacing: normal;
   line-height: 60px;
   text-transform: uppercase;
-  color: #E7DFDD;
+  color: #F9F7F4;
 }
 
+/*typed paragraph*/
 #typeJunior {
   text-align: center;
   align-self: center;
@@ -104,7 +132,7 @@ span {
   letter-spacing: normal;
   line-height: 30px;
   text-transform: none;
-  color: #E7DFDD;
+  color: #F9F7F4;
 }
 
 /*animation typeWriter*/
@@ -123,6 +151,52 @@ span {
   to {width: 100%}
 }
 
+/*questions accordion style*/
+.accordion {
+  background-color: #F9F7F4;
+  color: #0E0B16;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  cursor: pointer;
+  margin:0px;
+}
+
+/**/
+accordion:hover {
+  -webkit-animation: pulsate 0.5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.5;
+  color: #4717F6;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #0E0B16;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+/*response panel*/
+div.panel {
+  padding: 0 18px;
+  max-height: 0px;
+  background-color: #F9F7F4;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {color:  #0E0B16;}
+
+/*style of headers*/
 h1, h2, h3, h4 {
   font-family: Quicksand, sans-serif;
   font-size: 40px;
@@ -131,7 +205,7 @@ h1, h2, h3, h4 {
   letter-spacing: normal;
   line-height: 60px;
   text-transform: uppercase;
-  color: #E7DFDD;
+  color: #F9F7F4;
 }
 h1 {
   margin: 30px 0px 30px 0px;
@@ -169,7 +243,11 @@ p {
   letter-spacing: normal;
   line-height: 20px;
   text-transform: none;
-  color: #E7DFDD;
+  color: #F9F7F4;
+}
+
+ul {
+  list-style: none;
 }
 
 /*main content*/
