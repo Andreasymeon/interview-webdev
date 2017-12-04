@@ -4,31 +4,16 @@
   .menu a {font-size: 18px;}
 }
 
-body.homepage {
-  margin: 15px;
-  padding: 10px 15px 10px 15px;
-  height: 730px;
-  background-color: #0E0B16;
-  border: 3px solid #F9F7F4;
-}
-
 body {
   margin: 15px;
   padding: 10px 15px 10px 15px;
   height: 730px;
-  background-color: #F9F7F4;
-  border: 3px solid #0E0B16;
+  background-color: #0E0B16;
+  border: 3px solid #F9F7F4;
 }
 
 /*sidenav animation*/
 /*side menu*/
-body.homepage {
-  margin: 15px;
-  padding: 10px 15px 10px 15px;
-  height: 730px;
-  background-color: #0E0B16;
-  border: 3px solid #F9F7F4;
-}
 
 .menu {
   height: 100%;
