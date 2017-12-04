@@ -1,3 +1,218 @@
-// declaration of variables 
+$color-blue: #0E0B16;
+$color-beige: #F9F7F4;
+$color-hover: #4717F6;
+$font-title: 'Quicksand', sans-serif;
+$font-content: 'Oxygen', sans-serif;
 
-$
+@mixin w-h($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+@mixin m-pad($m, $pad) {
+	margin: $m;
+	padding: $pad;
+}
+body {
+	@include w-h(90%, 100%);
+	background-color: $color-blue;
+	margin: 15px;
+  	padding: 10px 15px 10px 15px;
+  	height: 730px;
+	border: 2px solid #F9F7F4;
+	color: $color-beige;
+}
+
+/*sidenav*/
+/*links in menu*/
+/*cross closing button*/
+.menu {
+	@include w-h(0px, 100%);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: $color-beige;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	cursor: pointer;
+
+	a {
+		font: {
+			family: $font-title;
+			size: 20px;
+		}
+		padding: 40px 8px 8px 40px;
+		text-decoration: none;
+		color: $color-blue;
+		display: block;
+		transition: 0.3s;
+
+		&:hover {
+			-webkit-animation: pulsate 0.5s ease-out;
+		    -webkit-animation-iteration-count: infinite;
+		    opacity: 0.5;
+			color: $color-hover;
+		}
+	}
+
+	.closebtn {
+		/*cross closing button*/
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 25px;
+		margin-left: 50px;
+	}
+}
+
+@-webkit-keyframes pulsate {
+    0% {opacity: 0.5;}
+    50% {opacity: 1.0}
+    100% {opacity: 0.5;}
+}
+
+@keyframes pulsate {
+    0% {opacity: 0.5;}
+    50% {opacity: 1.0}
+    100% {opacity: 0.5;}
+}
+
+/*-------------------------*/
+
+/*burger-menu*/
+span {
+	font: {
+		size: 25px;
+		family: $font-title;
+	}
+	align-content: start;
+	color: $color-beige;
+	@include m-pad (0px,0px);
+}
+
+/*---------------------------*/
+
+#main {
+	@include w-h (auto, 700px);
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: margin-left .3s;
+	padding: 20px;
+}
+
+/*--------homepage----------*/
+
+/*header name*/
+#name {
+	font: {
+		family: $font-title;
+		size: 40px;
+		style: normal;
+		weight: 400;
+	}
+	align-self: center;
+	letter-spacing: normal;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: $color-beige;
+}
+
+/*typed paragraph*/
+#typeJunior {
+	font {
+		family: $font-content;
+		size: 15px;
+		style: normal;
+		weight: normal;
+	}
+	text-align: center;
+	letter-spacing: normal;
+	line-height: 30px;
+  	text-transform: none;
+	color: $color-beige;
+}	
+
+/*animation typeWriter*/
+.typeWriter p { 
+	overflow: hidden; /*div hidden until beggining of animation*/
+	white-space: nowrap;/*keep sentence on single line until <br>*/
+	margin: 0 auto; /*scrolling effect*/
+	letter-spacing: 6px;
+	animation: typing 1s steps(30, end),
+          blink-caret .5s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+/*-----------interview---------------*/
+
+/*questions accordion panels*/
+.accordion {
+	@include m-pad (0px, 18px);
+	background-color: $color-beige;
+	color: $color-blue;
+	width: 50%;
+	text-align: left;
+  	border: none;
+  	outline: none;
+  	transition: 0.4s;
+	cursor: pointer;
+
+	&:hover {
+		-webkit-animation: pulsate 0.5s ease-out;
+  		-webkit-animation-iteration-count: infinite;
+  		opacity: 0.5;
+		color: $color-hover;
+	}
+
+	&:after {
+		content: '\002B';
+    	color: $color-beige;
+    	font-weight: bold;
+    	float: right;
+		margin-left: 5px;
+	}
+
+	&.active:after {
+		content: "\2212";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
