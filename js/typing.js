@@ -2,7 +2,7 @@
 /*typing effect*/
 var i = 0;
 var txt = 'Andrea Symeon Junior Web Developer!'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 500; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
   if (i < txt.length) {

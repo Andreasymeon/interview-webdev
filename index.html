@@ -4,36 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="./css/style.css">
-  <title>Andrea Symeon</title>
-  <script src="sidenav.js" charset="utf-8"></script>
-  <script src="typing.js" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Oxygen|Quicksand" rel="stylesheet">
+  
   <link rel="icon" href="photo/favicon.ico" sizes="16x16">
+
+  <title>Andrea Symeon</title>
+
 </head>
 
 <body>
+  
   <!--barre de navigation, sidenav overlay-->
   <div id="sidenav" class="menu">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home Page</a>
-    <a href="aboutme.html">About Me</a>
     <a href="making-of.html">Making Of</a>
     <a href="interview.html">Interview</a>
+    <a href="aboutme.html">About Me</a>
     <a href="conclusion.html">Conclusion</a>
   </div>
+  
   <!--burger menu-->
-  <span onclick="openNav()">&#9776;</span>
-  <div id="main">
+  <span id="burgermenu" onclick="openNav()">&#9776;</span>
+  
+  <main>
     <!--animation-->
     <div class="typeWriter">
     <h1 id="name">Andrea Symeon</h1>
     <p id="typeJunior">Junior Web Developer.</p>
-  </div>
-  <!--footer mentions légales, copyright, contact-->
-  <footer>
-    <p></p>
-  </footer>
-  </div>
+  </main>
+ 
+  <script src="./js/nav.js" charset="utf-8"></script>
+  <script src="./js/toggle.js" charset="utf-8"></script>
 </body>
 </html>

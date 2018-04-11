@@ -4,131 +4,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <script src="sidenav.js" charset="utf-8"></script>
-  <script src="toggle.js" charset="utf-8"></script>
+  
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oxygen|Quicksand" rel="stylesheet">
   <link rel="icon" href="photo/favicon.ico" sizes="16x16">
-  <title>Interview</title>
+
+  <title>Interview</title>  
 </head>
 <body>
-  <section class="background">
-    <!--barre de navigation--->
+    <!-- sidenav -->
     <div id="sidenav" class="menu">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home Page</a>
-      <a href="aboutme.html">About Me</a>
       <a href="making-of.html">Making Of</a>
       <a href="interview.html">Interview</a>
+      <a href="aboutme.html">About Me</a>
       <a href="conclusion.html">Conclusion</a>
     </div>
     <!--burger menu-->
-    <span onclick="openNav()">&#9776;</span>
-    <div id="main">
+    <span id="burgermenu" onclick="openNav()">&#9776;</span>
+
+    <header>
+      <h1>Interview</h1>
+      <h2>Anthony <a class="dupond" href="" target="_blank"><span class="dupond">du Pond</span></a></h2>
+      <p>Lead Front-End Developer chez 
+        <a id="dogstudio_link" href="https://www.dogstudio.co/" target="_blank">Dogstudio</a>
+      </p>
+      <!--<div id="line"></div>-->
+    </header>
+   
+    <main>
       <!--interview du webdev-->
-      <section>
-        <article class="interview">
-          <h1>Interview</h1>
-          <h2>Anthony du Pond</h2>
-            <h3>Présentation</h3>
-              <h4 class = "accordion">Peux-tu te présenter brièvement ?</h4>
-                <div class="panel">
-                  <p>"Je suis Anthony, jeune belge de 25 ans originaire de Bruxelles et habitant à Namur et passionné par son travail.</p>
-                </div>
-              <h4 class = "accordion">Où travailles-tu ? </h4>
-                <div class="panel">
-                  <p>"Je travaille actuellement chez Dogstudio, une agence digitale namuroise maintenant basée dans le centre de Namur et à Chicago."</p>
-                </div>
-              <h4 class = "accordion">Quelle est ta fonction exacte au sein de l'entreprise ?</h4>
-                <div class="panel">
-                  <p>"Je suis Lead Front-End Developer chez Dogstudio."</p>
-                </div>
-              <h4 class = "accordion">Depuis quand exerces-tu ?</h4>
-                <div class="panel">
-                  <p>"J'exerce maintenant depuis presque 5 ans. J'ai passé 3 ans et demi chez Dogstudio avant de faire un break en Décembre 2016 pour rejoindre EPIC Agency à Liège pour finalement revenir au source en Octobre 2017 comme Lead Front-End Developer chez Dogstudio."</p>
-                </div>
-              <h4 class = "accordion">Peux-tu me décrire en quoi consiste ton métier ou ton poste ?</h4>
-                <div class="panel">
-                  <p>"La partie Front-End Developer de mon status consiste à donner vie au designs de nos projets grâce au code et la partie Lead consiste à diriger le pôle Front-End chez Dogstudio et former les Front-End Developer Junior ou les nouveaux venus." </p>
-                </div>
-              <h4 class = "accordion">Quelles tâches annexes peux-tu être amené à accomplir ?</h4>
-                <div class="panel">
-                  <p>"En plus de ces tâches qui définissent mon rôle il m'est aussi demandé de faire des estimations pour les offres/devis que nous remettons à nos clients. Chaque projet est différent avec ses fonctionnalités propres qui prennent un certain temps à développer. Cette tâche annexe consiste donc à estimer le temps et donc le coût que chaque fonctionnalité prend mais aussi à mettre en avant les potentiels soucis que l'on pourrait rencontrer en les développant."</p>
-                </div>
-            <h3>Pourquoi le webdevelopment ?</h3>
-              <h4 class = "accordion">Qu’est-ce qui t'a donné envie de faire ce métier ?</h4>
-                <div class="panel">
-                  <p>"Ca a commencé à 16 ans, ça a été une révélation, j'ai goûté au développement et je n'ai plus arrêté d'en faire. Je jouais à un jeu en ligne web de l'époque et je voulais moi aussi faire mon jeu en ligne. J'ai commencé à essayer de coder et j'y ai pris goût et 2 ans plus tard après mes études secondaires en science j'ai décidé de me lancer dans un tout autre domaine, le web pour en faire mon métier actuel." </p>
-                </div>
-              <h4 class = "accordion">Quel est ton parcours ? </h4>
-                <div class="panel">
-                  <p>"J'ai fait 2 ans en autodidacte dans ma chambre chez mes parents pendant mes études secondaires avant d'entrer à 18 ans en 2010 à la Haute Ecole Albert Jacquard à Namur. Au bout de 3 ans, en 2013, j'ai obtenu mon diplôme avec distinction."</p>
-                </div>
-              <h4 class = "accordion">Comment es-tu parvenu à ton emploi actuel ?</h4>
-                <div class="panel">
-                  <p>"Lors de ma dernière année d'étude à la Haute Ecole Albert Jacquard j'ai eu l'opportunité de faire un stage en entreprise à plein temps de 3 mois chez Dogstudio. C'était une étape obligatoire à l'accomplissement de ma formation et cela m'a permis de me faire ma première expérience dans le milieu professionnel du web. Au bout de ces 3 mois il a fallut partir pour finir mon année mais la chance m'a souris car à la sortie des études Dogstudio m'a recontacté pour m'engager, la suite on la connait."</p>
-                </div>
-            <h3>Un bon webdeveloper...</h3>
-              <h4 class = "accordion">Quelles sont les qualités personnelles nécessaires pour exercer ce métier selon toi ?</h4>
-                <div class="panel">
-                  <p>"De la motivation, de la curiosité, un bon sens de l'humour, une bonne gestion du stresse." </p>
-                </div>
-              <h4 class = "accordion">Quelles sont les compétences professionnelles exigées dans ce métier ?</h4 >
-                <div class="panel">
-                  <p>"Savoir travailler en équipe, savoir écouter les idées des autres, savoir les enchérir, savoir travailler de manière qualitative constante peu importe le stresse et savoir respecter les délais qui sont imposés."</p>
-                </div>
-              <h4 class = "accordion">Peux-tu préciser à quelles technologies tu fais appel au quotidien ?</h4>
-                <div class="panel">
-                  <ul>
-                    <li>"HTML5 et CSS3 pour la construction des pages.</li>
-                    <li>Javascript pour l'interactivité. </li>
-                    <li>PHP/MySQL pour la gestion des données dynamiques. </li>
-                    <li>SASS pour étendre les possibilités CSS. </li>
-                    <li>Gulp, Webpack, Twig,..."</li>
-                  </ul>
-                </div>
-              <h4 class = "accordion">Qu’est-ce qui te plaît le plus dans ton métier et pourquoi ?</h4>
-                <div class="panel">
-                  <p>"Ce qui me plait le plus ce sont les challenges que chaque projet apporte. Il y a toujours des nouvelles façon d'aborder les fonctionnalités, constamment de nouvelles technologies à essayer et toujours la possibilité d'innover. C'est aussi le travail en équipe, l'émulsion créative qui a lieu pour chaque projet pour qu'ensemble on sorte le meilleur site possible pour répondre aux besoins du client."</p>
-                </div>
-            <h3>Contraintes</h3>
-              <h4 class = "accordion">Quelles sont les personnes avec qui tu es amené à entrer en relation ?</h4>
+      <div id="interview">
+          <div class="container-tab">
+            <div class="title-tab">
+              <h3>Présentation</h3>
+              <div id="line"></div>
+            </div>  
+            <div class="question-tab">     
+              <h4 class = "accordion"><span class ="question">Peux-tu te présenter brièvement ? </span></h4>
+              <div class="panel">
+                <p>"Je suis Anthony, jeune belge de 25 ans originaire de Bruxelles et habitant à Namur et passionné par son travail.</p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Où travailles-tu ?</span></h4>
+              <div class="panel">
+                <p>"Je travaille actuellement chez Dogstudio, une agence digitale namuroise maintenant basée dans le centre de Namur et à Chicago."</p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Quelle est ta fonction exacte au sein de l'entreprise ?</span></h4>
+              <div class="panel">
+                <p>"Je suis Lead Front-End Developer chez Dogstudio."</p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Depuis quand exerces-tu ?</span></h4>
+              <div class="panel">
+                <p>"J'exerce maintenant depuis presque 5 ans. J'ai passé 3 ans et demi chez Dogstudio avant de faire un break en Décembre 2016 pour rejoindre EPIC Agency à Liège pour finalement revenir au source en Octobre 2017 comme Lead Front-End Developer chez Dogstudio."</p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Peux-tu me décrire en quoi consiste ton métier ou ton poste ?</span></h4>
+              <div class="panel">
+                <p>"La partie Front-End Developer de mon status consiste à donner vie au designs de nos projets grâce au code et la partie Lead consiste à diriger le pôle Front-End chez Dogstudio et former les Front-End Developer Junior ou les nouveaux venus." </p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Quelles tâches annexes peux-tu être amené à accomplir ?</span></h4>
+              <div class="panel">
+                <p>"En plus de ces tâches qui définissent mon rôle il m'est aussi demandé de faire des estimations pour les offres/devis que nous remettons à nos clients. Chaque projet est différent avec ses fonctionnalités propres qui prennent un certain temps à développer. Cette tâche annexe consiste donc à estimer le temps et donc le coût que chaque fonctionnalité prend mais aussi à mettre en avant les potentiels soucis que l'on pourrait rencontrer en les développant."</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container-tab">
+            <div class="title-tab">     
+              <h3>Pourquoi le webdevelopment ?</h3>
+              <div id="line"></div>
+            </div>
+            <div class="question-tab">       
+              <h4 class = "accordion"><span class ="question">Qu’est-ce qui t'a donné envie de faire ce métier ?</span></h4>
+              <div class="panel">
+                <p>"Ca a commencé à 16 ans, ça a été une révélation, j'ai goûté au développement et je n'ai plus arrêté d'en faire. Je jouais à un jeu en ligne web de l'époque et je voulais moi aussi faire mon jeu en ligne. J'ai commencé à essayer de coder et j'y ai pris goût et 2 ans plus tard après mes études secondaires en science j'ai décidé de me lancer dans un tout autre domaine, le web pour en faire mon métier actuel." </p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Quel est ton parcours ?</span> </h4>
+              <div class="panel">
+                <p>"J'ai fait 2 ans en autodidacte dans ma chambre chez mes parents pendant mes études secondaires avant d'entrer à 18 ans en 2010 à la Haute Ecole Albert Jacquard à Namur. Au bout de 3 ans, en 2013, j'ai obtenu mon diplôme avec distinction."</p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Comment es-tu parvenu à ton emploi actuel ?</span></h4>
+              <div class="panel">
+                <p>"Lors de ma dernière année d'étude à la Haute Ecole Albert Jacquard j'ai eu l'opportunité de faire un stage en entreprise à plein temps de 3 mois chez Dogstudio. C'était une étape obligatoire à l'accomplissement de ma formation et cela m'a permis de me faire ma première expérience dans le milieu professionnel du web. Au bout de ces 3 mois il a fallut partir pour finir mon année mais la chance m'a souris car à la sortie des études Dogstudio m'a recontacté pour m'engager, la suite on la connait."</p>
+              </div>
+            </div> 
+          </div>   
+
+          <div class="container-tab">   
+            <div class="title-tab">     
+              <h3>Un bon webdeveloper...</h3>
+              <div id="line"></div>
+            </div>
+            <div class="question-tab">
+              <h4 class = "accordion"><span class ="question">Quelles sont les qualités personnelles nécessaires pour exercer ce métier selon toi ?</span></h4>
+              <div class="panel">
+                <p>"De la motivation, de la curiosité, un bon sens de l'humour, une bonne gestion du stresse." </p>
+              </div>
+              <h4 class = "accordion"><span class ="question">Quelles sont les compétences professionnelles exigées dans ce métier ?</span></h4 >
+              <div class="panel">
+                <p>"Savoir travailler en équipe, savoir écouter les idées des autres, savoir les enchérir, savoir travailler de manière qualitative constante peu importe le stresse et savoir respecter les délais qui sont imposés."</p>
+               </div>
+              <h4 class = "accordion"><span class ="question">Peux-tu préciser à quelles technologies tu fais appel au quotidien ?</span></h4>
+              <div class="panel">
+                 <ul>
+                  <li>"HTML5 et CSS3 pour la construction des pages.</li>
+                  <li>Javascript pour l'interactivité. </li>
+                  <li>PHP/MySQL pour la gestion des données dynamiques. </li>
+                  <li>SASS pour étendre les possibilités CSS. </li>
+                  <li>Gulp, Webpack, Twig,..."</li>
+                 </ul>
+              </div>
+              <h4 class = "accordion"><span class ="question">Qu’est-ce qui te plaît le plus dans ton métier et pourquoi ?</span></h4>
+              <div class="panel">
+                 <p>"Ce qui me plait le plus ce sont les challenges que chaque projet apporte. Il y a toujours des nouvelles façon d'aborder les fonctionnalités, constamment de nouvelles technologies à essayer et toujours la possibilité d'innover. C'est aussi le travail en équipe, l'émulsion créative qui a lieu pour chaque projet pour qu'ensemble on sorte le meilleur site possible pour répondre aux besoins du client."</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="container-tab">
+              <div class="title-tab">
+                <h3>Contraintes</h3>
+                <div id="line"></div>
+              </div>
+              <div class="question-tab">
+                <h4 class = "accordion"><span class ="question">Quelles sont les personnes avec qui tu es amené à entrer en relation ?</span></h4>
                 <div class="panel">
                   <p>"Au sein d'une entreprise, on entre en relation avec des personnes à tous les niveaux, que ce soit des designers, des project managers, des account managers, des back-end developper,... C'est pour cela qu'il le web ce n'est pas un bureau dans un sous-sol, c'est une équipe dans un open-space qui réfléchi ensemble pour sortir un projet qualitatif et innovant."</p>
                 </div>
-              <h4 class = "accordion">Y a-t-il des conditions de travail spécifiques ? Des contraintes physiques ?</h4>
-                  <div class="panel">
-                    <p>"Je ne pense pas qu'il y ait de contraintes réellement." </p>
-                  </div>
-              <h4 class = "accordion">Quels sont les problèmes auxquels tu peux être confronté ?</h4>
+                <h4 class = "accordion"><span class ="question">Y a-t-il des conditions de travail spécifiques ? Des contraintes physiques ?</span></h4>
+                <div class="panel">
+                  <p>"Je ne pense pas qu'il y ait de contraintes réellement." </p>
+                </div>
+                <h4 class = "accordion"><span class ="question">Quels sont les problèmes auxquels tu peux être confronté ?</span></h4>
                 <div class="panel">
                   <p>"D'un point de vue technique, en tant que Developer il faut surfer sur la vague technologique sans oublier mamie qui utilise encore un vieil ordinateur. C'est souvent un soucis car les technologies modernes qui vous font de l'oeil ne vont pas toujours fonctionner pour votre mamie. Il faut donc toujours prendre un maximum de scénario en compte pour éviter des soucis et donc peser constamment le pour et le contre des technologies que vous utilisez."</p>
                 </div>
-            <h3>Le marché de l'emploi</h3>
-              <h4 class = "accordion">Quel est l'état du marché de l'emploi pour ce métier en général selon toi ? Dans ta zone géographique ?</h4>
+              </div>
+            </div>
+
+            <div class="container-tab">
+              <div class="title-tab">      
+                <h3>Le marché de l'emploi</h3>
+                <div id="line"></div>
+              </div>
+              <div class="question-tab">
+                <h4 class = "accordion"><span class ="question">Quel est l'état du marché de l'emploi pour ce métier en général selon toi ?</span></h4>
                 <div class="panel">
                   <p>"Le marché de l'emploi dans le web est selon moi voué à évoluer de plus en plus vite, il y a clairement de plus en plus de demande et un intérêt grandissant chez les jeunes pour rentrer dans ce milieu. Ca veut peut-être aussi dire dans les années à venir trop de développeurs pour le nombre d'emploi donc autant en profiter maintenant pour se lancer."</p>
                 </div>
-              <h4 class = "accordion">Existe-t-il des difficultés de recrutement dans ton métier ?</h4>
+                <h4 class = "accordion"><span class ="question">Existe-t-il des difficultés de recrutement dans ton métier ?</span></h4>
                 <div class="panel">
                   <p>"Il y a de la demande mais malheureusement beaucoup de demande de personnes ayant déjà un bon bagage d'expérience. Après ça ne veut pas dire qu'il est impossible de trouver de l'emploi dans notre milieu mais il faut tout de même se démarquer par sa motivation et sa détermination à apprendre toujours plus pour se sortir du lot, ça aide toujours mais pas que en web." </p>
                 </div>
-              <h4 class = "accordion">As-tu déjà été démarché par un recruteur ?</h4>
-              <div class="panel">
-                <p>"Sans vouloir me vanter, je ne compte plus le nombre de recruteurs qui me contactent via les réseaux sociaux comme Linkedin notamment ou même par téléphone. Ca vient de Belgique ou de l'étranger. De mon entourage professionnel nous sommes nombreux dans ce cas. La preuve que la demande est là !" </p>
+                <h4 class = "accordion"><span class ="question">As-tu déjà été démarché par un recruteur ?</span></h4>
+                <div class="panel">
+                  <p>"Sans vouloir me vanter, je ne compte plus le nombre de recruteurs qui me contactent via les réseaux sociaux comme Linkedin notamment ou même par téléphone. Ca vient de Belgique ou de l'étranger. De mon entourage professionnel nous sommes nombreux dans ce cas. La preuve que la demande est là !" </p>
+                </div>
               </div>
-            <h3>Conseils...</h3>
-              <h4 class = "accordion">Y a-t-il des personnes à qui tu déconseillerais de faire ce métier ? Quels conseils me donnerais-tu ?</h4 class = "accordion">
+            </div>
+
+            <div class="container-tab">
+              <div class="title-tab">   
+                <h3>Conseils...</h3>
+                <div id="line"></div>
+              </div>
+              <div class="question-tab">
+                <h4 class = "accordion"><span class ="question">Quels conseils me donnerais-tu ?</span></h4>
                 <div class="panel">
                   <p>"Si vous faites ces études car vous pensez que c'est tranquille, si vous avez du mal à gérer le stresse, si vous avez du mal à tenir des délais, si vous faites ça car rien d'autre ne vous plaît sans être vraiment passionnés alors je vous déconseille se métier. Le développement de manière générale c'est un métier qui est parfois très stressant car ce sont constamment des délais à tenir, on va vous mettre la pression et il va falloir savoir gérer ce stresse et rendre votre travail qualitatif dans les temps. De plus la technologie évolue tout le temps et vous devez rester constamment curieux et essayer ce qu'il sort. Il faut tout de même être un peu sociable, travailler tout seul c'est rarement épanouissant et il est difficile d'évoluer sans d'autres personnes plus expérimentées pour vous apprendre des choses. Il faut savoir accepter la critique et se remettre toujours en question, c'est pour votre bien."</p>
-        </article>
-        <figure id="anthony">
-          <img src="photo/Anthony.jpg" alt="Anthony's picture">
-        </figure>
-      </section>
-      <!--mentions légales, copyright, contact-->
-      <footer></footer>
-    </div>
-  </section>
+                </div>
+              </div>    
+            </div>    
+
+        <!--<figure id="anthony">
+          <img src="img/Anthony.jpg" alt="Anthony's picture">
+        </figure>-->
+    </main>
+
+  <script src="./js/nav.js" charset="utf-8"></script>
+  <script src="./js/toggle.js" charset="utf-8"></script>
 </body>
 </html>
