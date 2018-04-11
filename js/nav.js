@@ -9,5 +9,6 @@ function openNav() {
 /*barre de navigation width and left margin when clicked close*/
 function closeNav() {
   document.getElementById("sidenav").style.width = "0";
-  document.body.style.marginLeft = "13px";
+  document.body.style.marginLeft = "0";
+  document.getElementById("burgermenu").style.visibility = 'block';
 }
