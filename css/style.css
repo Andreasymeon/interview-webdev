@@ -90,9 +90,17 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align items in Main Axis */
+  align-items: stretch;
+  /* align items in Cross Axis */
+  align-content: stretch;
+  /* Extra space in Cross Axis */
   margin: 13px;
   padding: 10px 15px 10px 15px;
-  height: 99%;
+  height: 98.5%;
   border: 2px solid #F9F7F4;
 }
 
@@ -110,8 +118,8 @@ main {
 }
 
 footer {
-  margin-top: 185px;
-  height: 15px;
+  height: 40px;
+  align-items: flex-end;
 }
 
 h1, h2, h3, h4, a {
@@ -167,17 +175,6 @@ p {
   color: #F9F7F4;
 }
 
-/*--- icons ---*/
-.svg-inline--fa {
-  vertical-align: 0.5em;
-  padding-left: 7px;
-  color: #4717F6;
-}
-.svg-inline--fa:hover {
-  color: #F9F7F4;
-  opacity: 1;
-}
-
 /*------------------------------SIDENAV------------------------------*/
 /*links in menu*/
 /*cross closing button*/
@@ -193,6 +190,7 @@ p {
   padding-top: 100px;
   transition: 0.5s;
   cursor: pointer;
+  /*-----------------------icons-----------------------*/
 }
 .menu a {
   font-family: "Quicksand", sans-serif;
@@ -208,6 +206,26 @@ p {
   -webkit-animation-iteration-count: infinite;
   opacity: 0.5;
   color: #4717F6;
+}
+.menu #icons {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 60px;
+}
+.menu #icons .svg-inline--fa {
+  vertical-align: 0.5em;
+  color: #4717F6;
+  height: 1.5em;
+  padding-left: 10px;
+}
+.menu #icons .svg-inline--fa:hover {
+  color: #F9F7F4;
+  opacity: 1;
+}
+.menu #icons a {
+  padding: 0;
 }
 .menu .closebtn {
   /*cross closing button*/
@@ -275,6 +293,11 @@ span {
   width: 500px;
   height: 455px;
   text-align: justify;
+  justify-content: flex-start;
+  /* align items in Main Axis */
+  align-items: stretch;
+  /* align items in Cross Axis */
+  align-content: stretch;
 }
 #aboutme p, #making-of p, #conclusion p {
   font-size: 25px;
