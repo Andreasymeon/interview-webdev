@@ -2,7 +2,7 @@
 function openNav() {
   document.getElementById("sidenav").style.width = "250px";
   document.body.style.marginLeft = "250px";
-  document.body.style.paddingLeft = "10";
+  document.body.style.paddingLeft = "0";
   document.getElementById("burgermenu").style.visibility = "hidden";
 }
 

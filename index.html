@@ -7,39 +7,40 @@
 
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oxygen|Quicksand" rel="stylesheet">
-  
   <link rel="icon" href="photo/favicon.ico" sizes="16x16">
 
   <title>A. |Home</title>
-
 </head>
-
 <body>
   <div class="container">
-  <!--barre de navigation, sidenav overlay-->
-  <div id="sidenav" class="menu">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home Page</a>
-    <a href="making-of.html">Making Of</a>
-    <a href="interview.html">Interview</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="conclusion.html">Conclusion</a>
-    <div id="icons">
-      <a href="https://github.com/Andreasymeon" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
-      <a href="https://www.linkedin.com/in/andrea-symeon/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+    
+    <!--sidenav-->
+    <div id="sidenav" class="menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home Page</a>
+      <a href="making-of.html">Making Of</a>
+      <a href="interview.html">Interview</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="conclusion.html">Conclusion</a>
+      <div id="icons">
+        <a href="https://github.com/Andreasymeon" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/andrea-symeon/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
     </div>
+    
+    <!--burger menu-->
+    <span id="burgermenu" onclick="openNav()">&#9776;</span>
+    
+    <main>
+      <!--animation-->
+      <div id="typeWriter">
+        <h1 id="name">Andrea Symeon</h1>
+        <p id="typeJunior">Junior Web Developer.</p>
+      </div>
+    </main>
   </div>
-  
-  <!--burger menu-->
-  <span id="burgermenu" onclick="openNav()">&#9776;</span>
-  
-  <main>
-    <!--animation-->
-    <div class="typeWriter">
-    <h1 id="name">Andrea Symeon</h1>
-    <p id="typeJunior">Junior Web Developer.</p>
-  </main>
- </div>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <script src="./js/nav.js" charset="utf-8"></script>
   <script src="./js/toggle.js" charset="utf-8"></script>
 </body>

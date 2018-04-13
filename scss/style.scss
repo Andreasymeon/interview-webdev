@@ -3,7 +3,7 @@
 
 $color-blue: #0E0B16;
 $color-beige: #F9F7F4;
-$color-hover: #4717F6;
+$color-hover: #003AFA;
 $font-title: 'Quicksand', sans-serif;
 $font-content: 'Oxygen', sans-serif;
 
@@ -184,8 +184,9 @@ p {
 
 /*------------------------------SIDENAV------------------------------*/
 
-/*links in menu*/
-/*cross closing button*/
+/* links in menu
+cross closing button
+icons */
 .menu {
 	@include w-h(0, 100%);
 	position: fixed;
@@ -206,7 +207,8 @@ p {
 		padding: 40px 8px 8px 40px;
 		text-decoration: none;
 		color: $color-blue;
-		display: block;
+		display: inline-block;
+
 		transition: 0.3s;
 
 		&:hover {
@@ -219,26 +221,25 @@ p {
 
 	/*-----------------------icons-----------------------*/
 	#icons {
-		@include w-h(100%, 25%);
-		display: flex;
-		align-items: flex-end;
-		margin-left: 60px;
-		.svg-inline--fa {
-			vertical-align: 0.5em;
-			color: $color-hover;
-			height: 1.5em;
-			padding-left: 10px;
-
-			&:hover {
-				color: $color-beige;
-				opacity: 1;
-			}
-		}
-
+		@include w-h(50%, 0%);
+		margin-left: 80px;
+		
 		a {
 			padding: 0;
+			padding-top: 130px;
+			.svg-inline--fa {
+				vertical-align: 0.5em;
+				color: $color-hover;
+				padding-left: 10px;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
 		}
 	}
+	
 	.closebtn {
 		/*cross closing button*/
 		position: absolute;
@@ -294,7 +295,7 @@ span {
 }	
 
 /*animation typeWriter*/
-.typeWriter p { 
+#typeWriter p { 
 	overflow: hidden; /*div hidden until beggining of animation*/
 	white-space: nowrap;/*keep sentence on single line until <br>*/
 	margin: 0 auto; /*scrolling effect*/
@@ -312,9 +313,6 @@ span {
 	height: 455px;
 	text-align: justify;
 	
-	    justify-content: flex-start; /* align items in Main Axis */
-	    align-items: stretch; /* align items in Cross Axis */
-	    align-content: stretch; 
 	p {
 		font-size: 25px;
 		line-height: 30px;
@@ -324,6 +322,7 @@ span {
 		text-decoration: none;
 		color: $color-hover;
 		font-size: 20px;
+		text-shadow: 2px 2px 4px $color-blue;
 	}
 }
 
