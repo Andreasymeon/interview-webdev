@@ -88,7 +88,7 @@ table {
 html {height: 100%;}
 
 body {
-	@include w-h(100%, 94%);
+	@include w-h(100vw, 94vh	);
 	background-color: $color-blue;
 	color: $color-beige;
 	transition: margin-left .3s;
@@ -226,7 +226,7 @@ icons */
 		
 		a {
 			padding: 0;
-			padding-top: 130px;
+			padding-top: 13	0px;
 			.svg-inline--fa {
 				vertical-align: 0.5em;
 				color: $color-hover;
