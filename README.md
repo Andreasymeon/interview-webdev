@@ -19,6 +19,8 @@ We ask you at least the following pages:
 
 **[List of questions](interviewwebdev.md)**
 
+-------------------------------------------------------
+
 (French)
 
 # Projet 1 : Interview d'un webdev
