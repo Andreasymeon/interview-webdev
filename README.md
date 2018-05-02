@@ -1,9 +1,9 @@
-(English) --> French below
+English (--> Francais en dessous)
 
 # BeCode Project 1: Webdev Interview
 
 - creation of a small multipage website
-- to host with [GitHub Pages] (https://pages.github.com/)
+- to host with [GitHub Pages](https://pages.github.com/)
 - get in touch with a professional
 
 ## Constraints
