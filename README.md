@@ -12,12 +12,12 @@ The name of the GitHub repo where you will host your code: ** interview-webdev *
 
 We ask you at least the following pages:
 
-- ** Home **: quick presentation of yourself. Who are you ? What are you doing at BeCode?
-- ** Making Of **: How did you find your webdev
-- ** Interview ** (see list of questions)
-- ** Conclusion **: analysis / personal impression.
+- **Home**: quick presentation of yourself. Who are you ? What are you doing at BeCode?
+- **Making Of**: How did you find your webdev
+- **Interview** : (see list of questions)
+- **Conclusion**: analysis / personal impression.
 
-** [List of questions] (interviewwebdev.md) **
+**[List of questions] (interviewwebdev.md)**
 
 (French)
 
@@ -36,7 +36,7 @@ Nous te demandons au minimum les pages suivantes :
 
 - **Accueil** : présentation rapide de toi-même. Qui es-tu ? Que fais-tu à BeCode ?
 - **Making Of** : comment tu as trouvé ton webdev
-- **Interview** (voir liste de questions)
+- **Interview** : (voir liste de questions)
 - **Conclusion** : analyse/impression personnelle. Est-ce que ce sont des réponses auxquelles tu t'attendais ? Est-ce que tu es surpris ? As-tu appris des choses ?
 
 **[Liste des questions](interviewwebdev.md)**
