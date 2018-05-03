@@ -1,0 +1,490 @@
+
+/*------------------------------VARIABLES & MIXIN------------------------------*/
+
+$color-blue: #0E0B16;
+$color-beige: #F9F7F4;
+$color-hover: #003AFA;
+$font-title: 'Quicksand', sans-serif;
+$font-content: 'Oxygen', sans-serif;
+
+@mixin w-h($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+@mixin m-pad($m, $pad) {
+	margin: $m;
+	padding: $pad;
+}
+
+/*------------------------------RESET------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------CSS ANIMATIONS------------------------------*/
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@-webkit-keyframes pulsate {
+    0% {opacity: 0.5;}
+    50% {opacity: 1.0}
+    100% {opacity: 0.5;}
+}
+
+@keyframes pulsate {
+    0% {opacity: 0.5;}
+    50% {opacity: 1.0}
+    100% {opacity: 0.5;}
+}
+
+/*------------------------------GLOBAL STYLE------------------------------*/
+
+html {height: 100%;}
+
+body {
+	@include w-h(100vw, 94vh);
+	background-color: $color-blue;
+	color: $color-beige;
+	transition: margin-left .3s;
+	overflow-x: hidden;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; /* align items in Main Axis */
+	align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+	margin: 13px;
+  	padding: 10px 15px 10px 15px;
+  	height: 98.5%;
+	border: 2px solid #F9F7F4;
+}
+header {
+	padding-left: 30px;
+	position: sticky;
+}
+
+main {
+	@include w-h (auto, 400px);
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	//margin-top: 185px;
+	height: 40px;
+	align-items: flex-end;
+}
+
+h1, h2, h3, h4, a {
+	font: {
+		family: $font-title;
+		size: 40px;
+		style: normal;
+		weight: 400;
+	}
+	letter-spacing: normal;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: $color-beige;
+}
+
+h1 {margin-top: 30px;}
+
+h2 {
+	margin-bottom: 20px;
+	font: {
+		size: 25px;
+		weight: 400;
+	}
+	line-height: 40px;
+	text-transform: none;
+}
+
+h3 {
+	margin: 5px 0 5px 0;
+	font: {
+		size: 25px;
+		weight: normal;
+	}
+	line-height: 30px;
+	text-transform: none;
+}
+
+h4 {
+	@include m-pad (0,0);
+	font: {
+		size: 16px;
+		weight: normal;
+	}
+	line-height: 20px;
+	letter-spacing: normal;
+	text-transform: none;
+	border-bottom: 2px solid $color-beige;
+}
+
+p {
+	font: {
+		family: $font-content;
+		size: 15px;
+		style: normal;
+		weight: normal;
+	}
+	letter-spacing: normal;
+	line-height: 20px;
+	text-transform: none;
+	color: $color-beige;
+}
+
+/*------------------------------SIDENAV------------------------------*/
+
+/* links in menu
+cross closing button
+icons */
+.menu {
+	@include w-h(0, 100%);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: $color-beige;
+	overflow-x: hidden;
+	padding-top: 100px;
+	transition: 0.5s;
+	cursor: pointer;
+
+	a {
+		font: {
+			family: $font-title;
+			size: 20px;
+		}
+		padding: 40px 8px 8px 40px;
+		text-decoration: none;
+		color: $color-blue;
+		display: inline-block;
+
+		transition: 0.3s;
+
+		&:hover {
+			-webkit-animation: pulsate 0.5s ease-out;
+		    -webkit-animation-iteration-count: infinite;
+		    opacity: 0.5;
+			color: $color-hover;
+		}
+	}
+
+	/*-----------------------icons-----------------------*/
+	#icons {
+		@include w-h(50%, 0%);
+		margin-left: 80px;
+		
+		a {
+			padding: 0;
+			padding-top: 13	0px;
+			.svg-inline--fa {
+				vertical-align: 0.5em;
+				color: $color-hover;
+				padding-left: 10px;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+		}
+	}
+	
+	.closebtn {
+		/*cross closing button*/
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 25px;
+		margin-left: 50px;
+	}
+}
+
+/*burger-menu*/
+span {
+	cursor: pointer;
+	font: {
+		size: 25px;
+		family: $font-title;
+	}
+	align-content: start;
+	color: $color-beige;
+	@include m-pad (0, 0);
+}
+
+/*------------------------------HOMEPAGE------------------------------*/
+
+/*header name*/
+#name {
+	font: {
+		family: $font-title;
+		size: 40px;
+		style: normal;
+		weight: 400;
+	}
+	align-self: center;
+	letter-spacing: normal;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: $color-beige;
+}
+
+/*typed paragraph*/
+#typeJunior {
+	font: {
+		family: $font-content;
+		size: 15px;
+		style: normal;
+		weight: normal;
+	}
+	text-align: center;
+	letter-spacing: normal;
+	line-height: 30px;
+  	text-transform: none;
+	color: $color-beige;
+}	
+
+/*animation typeWriter*/
+#typeWriter p { 
+	overflow: hidden; /*div hidden until beggining of animation*/
+	white-space: nowrap;/*keep sentence on single line until <br>*/
+	margin: 0 auto; /*scrolling effect*/
+	letter-spacing: 6px;
+	animation: typing 5s steps(50, end),
+    blink-caret 1.5s step-end infinite;
+}
+
+/*--------------------------ABOUT/MAKING-OF/CONCLUSION----------------------------------*/
+
+#aboutme, #making-of, #conclusion {
+	margin-top: 200px;
+	margin-left: 500px;
+	width: 500px;
+	height: 455px;
+	text-align: justify;
+	
+	p {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	a  {
+		text-decoration: none;
+		color: $color-hover;
+		font-size: 20px;
+		text-shadow: 2px 2px 4px $color-blue;
+	}
+}
+
+
+/*------------------------------INTERVIEW------------------------------*/
+header {
+	a {
+		text-decoration: none;
+		&:visited {opacity: .5;}
+	}
+
+	.dupond {
+		padding-left: 5px;
+		letter-spacing: 5px;
+		color: $color-hover;
+
+		&:hover {
+			color: $color-beige;
+			opacity: .5;
+		}
+	}
+
+	#dogstudio_link {
+		text-decoration: none;
+		color: $color-hover;
+		
+		font: {
+			size: 14px;
+			weight: bold;
+		}
+
+		&:hover {
+			color: $color-beige;
+			opacity: .5;
+		}
+
+	}
+
+}
+
+#line {
+	@include m-pad(12px, 0);
+	@include w-h(60px, 1px);
+	margin-left: 0px;
+	background-color: $color-beige;
+	opacity: .3;
+	content: "";
+	display: block;
+}
+
+#interview {
+	@include w-h(96%, 100%);
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+		background-color: $color-blue;
+	    width: 4px;
+	}
+	&::-webkit-scrollbar-track {
+    	box-shadow: inset 0 0 4px $color-blue; 
+   	}
+   	&::-webkit-scrollbar-thumb {
+    	background: $color-hover; 
+    	border-radius: 10px;
+   	}
+
+	/*questions tabs*/
+	.container-tab {
+		display: flex;
+		justify-content: center;
+		padding-left: 100px;
+		
+		.title-tab {
+			width: 40%;
+			margin-top: 80px;
+			
+		}
+		.question-tab {
+			width: 60%;
+			margin-top: 80px;
+		
+		}
+	}
+	
+	/*questions accordion panels*/
+	.accordion {
+		@include m-pad (0px, 5px);
+		background-color: $color-blue;
+		color: $color-beige;
+		text-align: left;
+	  	border: none;
+	  	outline: none;
+	  	transition: 0.4s;
+		cursor: pointer;
+
+		&:after {
+			content: '\002B';
+	    	color: $color-beige;
+	    	float: left;
+			margin-left: 5px;
+			margin-right: 20px;
+		}
+		&.active:after {
+			content: "\2212";
+		}
+
+		.question {
+			font-size: 16px;
+			&:hover {
+				opacity: .5;
+			}
+		}
+	}
+
+	/*response panel*/
+	.panel {
+		@include m-pad (0, 5px);
+		max-height: 0;
+		width: 70%;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+
+		p {
+			margin: 25px 20px 25px 20px;
+		}
+
+		ul {list-style: none;}
+	}
+}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
