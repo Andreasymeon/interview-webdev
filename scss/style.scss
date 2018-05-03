@@ -88,10 +88,11 @@ table {
 html {height: 100%;}
 
 body {
-	@include w-h(100vw, 94vh	);
+	@include w-h(100vw, 94vh);
 	background-color: $color-blue;
 	color: $color-beige;
 	transition: margin-left .3s;
+	overflow-x: hidden;
 }
 .container {
 	display: flex;
