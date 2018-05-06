@@ -25,7 +25,8 @@ We ask you at least the following pages:
 -------------------------------------------------------
 
 (French)
-Ce que j'ai aoorisd:HTML, CSS, SASS, et un peu de JavaScript.
+
+Ce que j'ai appris: HTML, CSS, SASS, et un peu de JavaScript.
 
 # Projet 1 : Interview d'un webdev
 
