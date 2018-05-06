@@ -1,7 +1,7 @@
 English (--> Francais en dessous)
-
+------------------
 What I learned:HTML, CSS, SASS, and a few bits of JavaScript
-
+-------------------
 # BeCode Project 1: Webdev Interview
 
 - creation of a small multipage website
