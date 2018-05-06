@@ -1,5 +1,7 @@
 English (--> Francais en dessous)
 
+What I learned:HTML, CSS, SASS, and a few bits of JavaScript
+
 # BeCode Project 1: Webdev Interview
 
 - creation of a small multipage website
@@ -22,6 +24,7 @@ We ask you at least the following pages:
 -------------------------------------------------------
 
 (French)
+Ce que j'ai aoorisd:HTML, CSS, SASS, et un peu de JavaScript.
 
 # Projet 1 : Interview d'un webdev
 
