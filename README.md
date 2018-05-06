@@ -27,7 +27,7 @@ We ask you at least the following pages:
 (French)
 
 Ce que j'ai appris: HTML, CSS, SASS, et un peu de JavaScript.
-
+----------------------
 # Projet 1 : Interview d'un webdev
 
 - création d'un petit site multipages
