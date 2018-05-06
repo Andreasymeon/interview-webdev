@@ -1,4 +1,4 @@
-English (--> Francais en dessous)
+(English)                                                                          (--> Francais en dessous)
 
 
 What I learned:HTML, CSS, SASS, and a few bits of JavaScript
