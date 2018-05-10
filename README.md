@@ -1,17 +1,27 @@
-(English)                                                                          (--> Francais en dessous)
+English & Francais
+
+- Webdev Interview (English)
+  * [Project](#project)
+    + [Constraints](#constraints)
+- Webdev Interview (French)
+  * [Projet](#projet)
+    + [Contraintes](#contraintes)
 
 
-What I learned:HTML, CSS, SASS, and a few bits of JavaScript
--------------------
-# BeCode Project 1: Webdev Interview
+# Webdev Interview (English)
 
+What I learned: HTML, CSS, SASS, and a few bits of JavaScript
+
+## Project 
+
+- First project
 - creation of a small multipage website
 - to host with [GitHub Pages](https://pages.github.com/)
 - get in touch with a professional
 
-## Constraints
+### Constraints 
 
-The name of the GitHub repo where you will host your code: ** interview-webdev **
+The name of the GitHub repo where you will host your code: **interview-webdev**
 
 We ask you at least the following pages:
 
@@ -22,20 +32,20 @@ We ask you at least the following pages:
 
 **[List of questions](interviewwebdev.md)**
 
--------------------------------------------------------
 
-(French)
+
+# Webdev Interview (French)
 
 Ce que j'ai appris: HTML, CSS, SASS, et un peu de JavaScript.
-----------------------
-# Projet 1 : Interview d'un webdev
+
+## Projet 
 
 - création d'un petit site multipages
 - à héberger via [GitHub Pages](https://pages.github.com/)
 - mise en relation avec un professionnel
 - vérification du projet professionnel
 
-## Contraintes
+### Contraintes
 
 Le nom du repo GitHub où tu hébergeras ton code : **interview-webdev**
 
