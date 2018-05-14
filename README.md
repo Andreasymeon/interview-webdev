@@ -16,6 +16,7 @@ What I learned: HTML, CSS, SASS, and a few bits of JavaScript
 
 - First project
 - creation of a small multipage website
+- No imposed layout
 - to host with [GitHub Pages](https://pages.github.com/)
 - get in touch with a professional
 
